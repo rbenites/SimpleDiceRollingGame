@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PIG Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+</head>
+
+<body>
+    <div class="wrapper clearfix">
+        <!--PLAYER 1-->
+        <div class="player-0-panel active">
+            <div class="player-name" id="name-0">Player 1</div>
+            <div class="player-score" id="score-0">0</div>
+            <div class="player-current-box">
+                <div class="player-current-label">Current</div>
+                <div class="player-current-score" id="current-0">0</div>
+            </div>
+        </div>
+
+        <!--PLAYER 2-->
+        <div class="player-1-panel">
+            <div class="player-name" id="name-1">Player 2</div>
+            <div class="player-score" id="score-1">0</div>
+            <div class="player-current-box">
+                <div class="player-current-label">Current</div>
+                <div class="player-current-score" id="current-1">0</div>
+            </div>
+        </div>
+
+        <!--NEW GAME BUTTON-->
+        <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+
+        <!--ROLL DICE BUTTON-->
+        <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+
+        <!--HOLD BUTTON-->
+        <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+
+        <input type="text" placeholder="Final score" class="final-score">
+
+        <img src="./images/dice-1.png" alt="Dice" class="dice" id="dice-1">
+        <img src="./images/dice-2.png" alt="Dice" class="dice" id="dice-2">
+    </div>
+
+    <!--jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <!--My Script-->
+    <script src="main.js"></script>
+</body>
+
+</html>
